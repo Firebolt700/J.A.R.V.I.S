@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dc79e88-fe4f-4683-ad34-743661fd7ed2" name="Default Changelist" comment="New insult and compliment">
-      <change beforePath="$PROJECT_DIR$/../J.A.R.V.I.S/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../J.A.R.V.I.S/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../J.A.R.V.I.S/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../J.A.R.V.I.S/bot.py" afterDir="false" />
-    </list>
+    <list default="true" id="0dc79e88-fe4f-4683-ad34-743661fd7ed2" name="Default Changelist" comment="Added capability to insult/compliment a target with multiple words for the target" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615484504881</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added capability to insult/compliment a target with multiple words for the target">
+      <created>1615485250228</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615485250228</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -113,6 +117,7 @@
     <MESSAGE value="Commit test" />
     <MESSAGE value="vcs.xml push" />
     <MESSAGE value="New insult and compliment" />
-    <option name="LAST_COMMIT_MESSAGE" value="New insult and compliment" />
+    <MESSAGE value="Added capability to insult/compliment a target with multiple words for the target" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added capability to insult/compliment a target with multiple words for the target" />
   </component>
 </project>
