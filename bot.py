@@ -13,28 +13,38 @@ bot = commands.Bot(command_prefix='Jarvis, ')
 
 
 @bot.command(name='insult', help='Insults target with a random insult.')
-async def insult(ctx, target):
+async def insult(ctx, *targets):
+    final_targets = ''
+
     insults = [
-        ' you smell like hobbit feet.',
-        ' you\'re so dumb you had to take grade 13.',
-        ' if you were a rock band you\'d be Nickelback.',
-        ' you make murder sound like a *really* good idea when you talk.'
+        'you smell like hobbit feet.',
+        'you\'re so dumb you had to take grade 13.',
+        'if you were a rock band you\'d be Nickelback.',
+        'you make murder sound like a *really* good idea when you talk.'
     ]
 
-    response = target + random.choice(insults)
+    for target in targets:
+        final_targets += target + ' '
+
+    response = final_targets + random.choice(insults)
     await ctx.send(response)
 
 
 @bot.command(name='compliment', help='Compliments target with random compliment.')
-async def compliment(ctx, target):
+async def compliment(ctx, *targets):
+    final_targets = ''
+
     compliments = [
-        ' you\'re hotter than Scarlett Johansson in the middle of a supernova.',
-        ' you\'re like, the best thing since porn.',
-        ' you\'re like crack, but in a good way.',
-        ' you got a nice ass.'
+        'you\'re hotter than Scarlett Johansson in the middle of a supernova.',
+        'you\'re like, the best thing since porn.',
+        'you\'re like crack, but in a good way.',
+        'you got a nice ass.'
     ]
 
-    response = target + random.choice(compliments)
+    for target in targets:
+        final_targets += target + ' '
+
+    response = final_targets + random.choice(compliments)
     await ctx.send(response)
 
 
