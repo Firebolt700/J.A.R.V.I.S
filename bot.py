@@ -17,7 +17,8 @@ async def insult(ctx, target):
     insults = [
         ' you smell like hobbit feet.',
         ' you\'re so dumb you had to take grade 13.',
-        ' if you were a rock band you\'d be Nickelback.'
+        ' if you were a rock band you\'d be Nickelback.',
+        ' you make murder sound like a *really* good idea when you talk.'
     ]
 
     response = target + random.choice(insults)
@@ -29,7 +30,8 @@ async def compliment(ctx, target):
     compliments = [
         ' you\'re hotter than Scarlett Johansson in the middle of a supernova.',
         ' you\'re like, the best thing since porn.',
-        ' you\'re like crack, but in a good way.'
+        ' you\'re like crack, but in a good way.',
+        ' you got a nice ass.'
     ]
 
     response = target + random.choice(compliments)
