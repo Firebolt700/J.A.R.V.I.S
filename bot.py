@@ -20,7 +20,10 @@ async def insult(ctx, *targets):
         'you smell like hobbit feet.',
         'you\'re so dumb you had to take grade 13.',
         'if you were a rock band you\'d be Nickelback.',
-        'you make murder sound like a *really* good idea when you talk.'
+        'you make murder sound like a *really* good idea when you talk.',
+        'you\'re looking for a fuck or a fight and I don\'t see your sister anywhere.',
+        'I\'ll go to your house and paint your fuckin\' fence.',
+        'your mother was a hamster and your father smelt of elderberries.'
     ]
 
     for target in targets:
