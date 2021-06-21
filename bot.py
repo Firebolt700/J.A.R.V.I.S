@@ -24,6 +24,9 @@ async def insult(ctx, *targets):
         'you\'re looking for a fuck or a fight and I don\'t see your sister anywhere.',
         'I\'ll go to your house and paint your fuckin\' fence.',
         'your mother was a hamster and your father smelt of elderberries.'
+        'I bet you\'re a League of Legends player.',
+        'Fuck your entire fuckin\' life bud, I get a tax break just for hanging out with you.',
+        'Could you just, like, discontinue your breathing career?'
     ]
 
     for target in targets:
@@ -41,7 +44,11 @@ async def compliment(ctx, *targets):
         'you\'re hotter than Scarlett Johansson in the middle of a supernova.',
         'you\'re like, the best thing since porn.',
         'you\'re like crack, but in a good way.',
-        'you got a nice ass.'
+        'you got a nice ass.',
+        'If you sold bath water I would buy it.',
+        'you\'re pretty good.',
+        'I\'m glad your parents fucked so that you could be here.'
+        'You\'re somebody\'s reason to masturbate.'
     ]
 
     for target in targets:
@@ -67,6 +74,10 @@ async def on_message(message):
 
     if message.content == 'Jarvis, you ever hear the tale of Jonah?':
         response = 'I wouldn\'t consider him a role model.'
+        await message.channel.send(response)
+
+    if message.content == 'Jarvis, who\'s the best gamer in the server?':
+        response = 'I believe you are, sir.'
         await message.channel.send(response)
 
     await bot.process_commands(message)
