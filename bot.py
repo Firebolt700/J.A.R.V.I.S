@@ -26,7 +26,9 @@ async def insult(ctx, *targets):
         'your mother was a hamster and your father smelt of elderberries.',
         'I bet you\'re a League of Legends player.',
         'Fuck your entire fuckin\' life bud, I get a tax break just for hanging out with you.',
-        'Could you just, like, discontinue your breathing career?'
+        'Could you just, like, discontinue your breathing career?',
+        'you\'re fuckin\' 10 ply, bud.',
+        'give your balls a tug, titfucker.'
     ]
 
     for target in targets:
@@ -48,7 +50,11 @@ async def compliment(ctx, *targets):
         'If you sold bath water I would buy it.',
         'you\'re pretty good.',
         'I\'m glad your parents fucked so that you could be here.',
-        'You\'re somebody\'s reason to masturbate.'
+        'You\'re somebody\'s reason to masturbate.',
+        'you\'re more wholesome than Keanu Reeves big chungus',
+        'I bet you look super good without clothes on, can you confirm that for me?',
+        'can you add me to your to-do list?',
+        'if there was no gravity on Earth I\'d still be falling for you'
     ]
 
     for target in targets:
