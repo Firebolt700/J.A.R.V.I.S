@@ -23,7 +23,7 @@ async def insult(ctx, *targets):
         'you make murder sound like a *really* good idea when you talk.',
         'you\'re looking for a fuck or a fight and I don\'t see your sister anywhere.',
         'I\'ll go to your house and paint your fuckin\' fence.',
-        'your mother was a hamster and your father smelt of elderberries.'
+        'your mother was a hamster and your father smelt of elderberries.',
         'I bet you\'re a League of Legends player.',
         'Fuck your entire fuckin\' life bud, I get a tax break just for hanging out with you.',
         'Could you just, like, discontinue your breathing career?'
@@ -47,7 +47,7 @@ async def compliment(ctx, *targets):
         'you got a nice ass.',
         'If you sold bath water I would buy it.',
         'you\'re pretty good.',
-        'I\'m glad your parents fucked so that you could be here.'
+        'I\'m glad your parents fucked so that you could be here.',
         'You\'re somebody\'s reason to masturbate.'
     ]
 
