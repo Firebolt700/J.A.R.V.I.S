@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dc79e88-fe4f-4683-ad34-743661fd7ed2" name="Default Changelist" comment="Bugfix with comma" />
+    <list default="true" id="0dc79e88-fe4f-4683-ad34-743661fd7ed2" name="Default Changelist" comment="New insults and compliments">
+      <change beforePath="$PROJECT_DIR$/../J.A.R.V.I.S/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../J.A.R.V.I.S/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../J.A.R.V.I.S/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../J.A.R.V.I.S/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../J.A.R.V.I.S/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../J.A.R.V.I.S/bot.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627314528814</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="New insults and compliments">
+      <created>1627324893355</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1627324893355</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -142,6 +153,7 @@
     <MESSAGE value="New insults" />
     <MESSAGE value="New messages (insults, compliments, best gamer)" />
     <MESSAGE value="Bugfix with comma" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugfix with comma" />
+    <MESSAGE value="New insults and compliments" />
+    <option name="LAST_COMMIT_MESSAGE" value="New insults and compliments" />
   </component>
 </project>

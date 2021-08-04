@@ -1,2 +1,5 @@
 # .env file with token #
 .env
+
+# IDE stuff #
+.idea

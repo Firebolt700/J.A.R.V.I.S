@@ -67,6 +67,7 @@ async def compliment(ctx, *targets):
 @bot.event
 async def on_ready():
     print('J.A.R.V.I.S. is online!')
+    print('Connected to ' + GUILD)
 
 
 @bot.event
