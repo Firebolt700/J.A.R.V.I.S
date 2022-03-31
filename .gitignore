@@ -2,4 +2,4 @@
 .env
 
 # IDE stuff #
-.idea
+**/.idea
