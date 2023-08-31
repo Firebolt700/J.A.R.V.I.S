@@ -1,93 +1,38 @@
-# bot.py
-import os
-import random
+"""
+JARVIS - A random Discord bot
 
-from discord.ext import commands
+Firebolt - Aug 31st 2023
+
+Version 2.0 - Full remake of Jarvis from scratch
+"""
+import os
+import discord
+import python_weather
 from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-GUILD = os.getenv('DISCORD_GUILD')
 
-bot = commands.Bot(command_prefix='Jarvis, ')
+intents = discord.Intents.default()
+intents.message_content = True
 
+client = discord.Client(intents=intents)
 
-@bot.command(name='insult', help='Insults target with a random insult.')
-async def insult(ctx, *targets):
-    final_targets = ''
-
-    insults = [
-        'you smell like hobbit feet.',
-        'you\'re so dumb you had to take grade 13.',
-        'if you were a rock band you\'d be Nickelback.',
-        'you make murder sound like a *really* good idea when you talk.',
-        'you\'re looking for a fuck or a fight and I don\'t see your sister anywhere.',
-        'I\'ll go to your house and paint your fuckin\' fence.',
-        'your mother was a hamster and your father smelt of elderberries.',
-        'I bet you\'re a League of Legends player.',
-        'Fuck your entire fuckin\' life bud, I get a tax break just for hanging out with you.',
-        'Could you just, like, discontinue your breathing career?',
-        'you\'re fuckin\' 10 ply, bud.',
-        'give your balls a tug, titfucker.'
-    ]
-
-    for target in targets:
-        final_targets += target + ' '
-
-    response = final_targets + random.choice(insults)
-    await ctx.send(response)
-
-
-@bot.command(name='compliment', help='Compliments target with random compliment.')
-async def compliment(ctx, *targets):
-    final_targets = ''
-
-    compliments = [
-        'you\'re hotter than Scarlett Johansson in the middle of a supernova.',
-        'you\'re like, the best thing since porn.',
-        'you\'re like crack, but in a good way.',
-        'you got a nice ass.',
-        'If you sold bath water I would buy it.',
-        'you\'re pretty good.',
-        'I\'m glad your parents fucked so that you could be here.',
-        'You\'re somebody\'s reason to masturbate.',
-        'you\'re more wholesome than Keanu Reeves big chungus',
-        'I bet you look super good without clothes on, can you confirm that for me?',
-        'can you add me to your to-do list?',
-        'if there was no gravity on Earth I\'d still be falling for you'
-    ]
-
-    for target in targets:
-        final_targets += target + ' '
-
-    response = final_targets + random.choice(compliments)
-    await ctx.send(response)
-
-
-@bot.event
+@client.event
 async def on_ready():
-    print('J.A.R.V.I.S. is online!')
-    print('Connected to ' + GUILD)
+    print(f'We have logged in as {client.user}')
 
-
-@bot.event
+@client.event
 async def on_message(message):
-    if message.author == bot.user:
+    city = 'Charlottetown'
+
+    if message.author == client.user:
         return
 
     if message.content == 'Jarvis, you there?':
-        response = 'For you, sir, always.'
-        await message.channel.send(response)
+        await message.channel.send('For you, sir, always.')
 
-    if message.content == 'Jarvis, you ever hear the tale of Jonah?':
-        response = 'I wouldn\'t consider him a role model.'
-        await message.channel.send(response)
+    if message.content == 'Jarvis, what is the weather in ' + city:
+        await message.channel.send(python_weather.getweather())
 
-    if message.content == 'Jarvis, who\'s the best gamer in the server?':
-        response = 'I believe you are, sir.'
-        await message.channel.send(response)
-
-    await bot.process_commands(message)
-
-
-bot.run(TOKEN)
+client.run(TOKEN)
